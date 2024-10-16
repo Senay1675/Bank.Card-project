@@ -1,0 +1,38 @@
+/* CardStyles.css */
+
+.card {
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-body {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-details {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.card-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    
+}

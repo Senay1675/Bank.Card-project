@@ -1,0 +1,21 @@
+/* NavBar.css */
+nav {
+    display: flex; /* Använd flexbox för att ordna länkarna i en rad */
+    justify-content: space-around; /* Jämn fördelning av länkar */
+    align-items: center; /* Vertikal centrering av länkar */
+    background-color: #333; /* Mörk bakgrundsfärg */
+    padding: 10px 20px; /* Inre marginaler */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lätt skugga för djup */
+}
+
+nav a {
+    color: white; /* Textfärg */
+    text-decoration: none; /* Ingen understrykning */
+    padding: 10px 15px; /* Inre marginaler för länkar */
+    border-radius: 5px; /* Rundade hörn */
+    transition: background-color 0.3s ease; /* Mjuk övergång för bakgrundsfärg */
+}
+
+nav a:hover {
+    background-color: #555; /* Ändra bakgrundsfärg vid hover */
+}

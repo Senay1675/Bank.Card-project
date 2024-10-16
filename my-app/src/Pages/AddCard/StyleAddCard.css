@@ -1,4 +1,8 @@
 .addCardForm{
     display: flex;
     flex-direction: column;
+    
+}
+label{
+    text-align: start;
 }
