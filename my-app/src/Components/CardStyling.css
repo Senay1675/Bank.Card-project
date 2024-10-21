@@ -13,20 +13,23 @@
 }
 
 .card-header {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
+    text-align: start;
 }
 
 .card-body {
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .card-details {
     font-size: 14px;
     letter-spacing: 1px;
+    margin-top: 18px;
 }
 
 .card-logo {

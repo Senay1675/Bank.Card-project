@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import CardComponent from '../../Components/Cardcomponent';// Importera återanvändbara kortkomponenten
+import CardComponent from '../../Components/Cardcomponent';
 import './StyleAddCard.css'
 
-const issuerColors = {
-    Visa: '#1A1F71', // Visa-färg
-    Mastercard: '#EB001B', // Mastercard-färg
-    'American Express': '#0072B1', // American Express-färg
-    // Lägg till fler om du har andra utgivare
-};
+
 
 const AddCard = ({ addCard }) => {
     const [cardNumber, setCardNumber] = useState("");
@@ -49,14 +44,13 @@ const AddCard = ({ addCard }) => {
         }
     };
 
-    // Skapa ett objekt för kortet för att skicka till CardComponent
+    // Skapar ett objekt för kortet för att skicka till CardComponent
     const cardPreview = { cardNumber, cardName, month, year, ccv, issuer, isActive: false };
 
     return (
         <>
             <h1>Add Card</h1>
 
-            {/* Förhandsvisning av kortet med samma komponent som används på andra sidor */}
             <div id="cardPreview">
                 <CardComponent card={cardPreview} /> {/* Återanvänd CardComponent */}
             </div>

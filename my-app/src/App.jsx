@@ -4,8 +4,8 @@ import HomePage from './Pages/HomePage';
 import Settings from './Pages/Settings';
 import AddCard from './Pages/AddCard/AddCard';
 import NavBar from './Components/Navbar';
-import CardDetails from './Pages/Card'; // Se till att filen har rätt namn
-import CardComponent from './Components/Cardcomponent';
+import CardDetails from './Pages/Card'; 
+
 import './App.css';
 
 function App() {
@@ -31,8 +31,8 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path='/' element={<HomePage cards={cards} />} /> {/* Skicka korten till HomePage */}
-        <Route path='/AddCard' element={<AddCard addCard={addCard} />} /> {/* Skicka addCard funktionen till AddCard */}
+        <Route path='/' element={<HomePage cards={cards} />} /> 
+        <Route path='/AddCard' element={<AddCard addCard={addCard} />} /> 
         <Route path='/settings' element={<Settings />} />
         <Route path='/card/:id' element={<CardDetails cards={cards} toggleActiveStatus={toggleActiveStatus} deleteCard={deleteCard} />} /> 
       </Routes>

@@ -1,22 +1,3 @@
-// import React from "react";
-// import { useState } from "react";
-// import { useLocation, useParams } from "react-router-dom";
-
-// let Card = ({ cards }) => {
-
-//     const { id } = useParams();
-//     const card = cards.find(c => c.cardNumber === id);
-
-//     return(
-//         <>
-//         <h1>Card</h1>
-//         <h1>{card.cardName}</h1>
-//         </>
-//     )
-// }
-
-// export default Card
-
 import { useParams } from 'react-router-dom';
 import CardComponent from '../Components/Cardcomponent';
 
@@ -40,6 +21,7 @@ const CardDetails = ({ cards, toggleActiveStatus, deleteCard }) => {
                     <button onClick={() => deleteCard(card.cardNumber)}>
                         Delete Card
                     </button>
+                   
                 </>
             )}
         </div>
@@ -47,4 +29,7 @@ const CardDetails = ({ cards, toggleActiveStatus, deleteCard }) => {
 };
 
 export default CardDetails;
+
+
+
 
